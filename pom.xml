@@ -11,7 +11,7 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.product</groupId>
+    <groupId>sn.isi.l3gl.api</groupId>
     <artifactId>product-api</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -28,13 +28,19 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <dependency>
-            <groupId>com.product</groupId>
+            <groupId>sn.isi.l3gl.core</groupId>
             <artifactId>product-core</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>0.3.0</version>
         </dependency>
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>mavenDevops-releases</id>
+            <url>https://picaresque-dilatometrically-demetria.ngrok-free.dev/repository/mavenDevops-releases/</url>
+        </repository>
+    </repositories>
 
     <build>
         <plugins>
